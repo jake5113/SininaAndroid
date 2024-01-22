@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.LoginActivity">
+
+    <ImageView
+        android:id="@+id/sinina_logo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/sinina_word"
+        android:layout_marginTop="150dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🍰  로그인하기"
+        android:textColor="#000000"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        android:layout_above="@id/kao_login_btn"
+        android:layout_marginBottom="-27dp"
+        android:paddingLeft="20dp"
+        />
+
+    <ImageView
+        android:id="@+id/kao_login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/google_login_btn"
+        android:layout_marginBottom="-96dp"
+        android:padding="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:src="@drawable/kao_login" />
+
+    <ImageView
+        android:id="@+id/google_login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:src="@drawable/gogle_login"
+        />
+
+
+</RelativeLayout>
