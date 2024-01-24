@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_cake_size"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:elevation="0dp"
+    app:cardCornerRadius="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tv_cake_type_title"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_checkbox_active"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/no_border_circle_active"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_check_active"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/vector_check_active"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_checkbox_active"
+                app:layout_constraintEnd_toEndOf="@+id/iv_checkbox_active"
+                app:layout_constraintStart_toStartOf="@+id/iv_checkbox_active"
+                app:layout_constraintTop_toTopOf="@+id/iv_checkbox_active" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_checkbox_enable"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/no_border_circle_enable"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_check_enable"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/vector_check_enable"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_checkbox_enable"
+                app:layout_constraintEnd_toEndOf="@+id/iv_checkbox_enable"
+                app:layout_constraintStart_toStartOf="@+id/iv_checkbox_enable"
+                app:layout_constraintTop_toTopOf="@+id/iv_checkbox_enable" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_cake_type_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_cake_type_content"
+            app:layout_constraintEnd_toStartOf="@+id/tv_cake_type_subtitle"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/constraintLayout"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="1호" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_cake_type_subtitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:textColor="@color/gray_99"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_cake_type_title"
+            app:layout_constraintEnd_toStartOf="@+id/tv_cake_type_price"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tv_cake_type_title"
+            app:layout_constraintTop_toTopOf="@+id/tv_cake_type_title"
+            app:layout_constraintVertical_bias="1.0"
+            tools:text="2~4인분" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_cake_type_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray_99"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/tv_cake_type_subtitle"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/tv_cake_type_title"
+            app:layout_constraintTop_toBottomOf="@+id/tv_cake_type_title"
+            tools:text="지름 10cm" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_cake_type_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tv_cake_type_subtitle"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="20,000원" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
+
