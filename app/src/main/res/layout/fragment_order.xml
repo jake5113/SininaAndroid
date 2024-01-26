@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?><!-- 주문하기 레이아웃 -->
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ui.order.OrderFragment">
+    tools:context=".ui.order.OrderFragment"
+    >
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
+        android:paddingEnd="15dp"
+        android:paddingStart="15dp"
+        app:layout_constraintBottom_toTopOf="@id/cl_float"
         >
 
         <!-- 고객 정보  -->
@@ -17,67 +21,62 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-        <androidx.appcompat.widget.LinearLayoutCompat
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="15dp"
-            >
-
-            <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/tv_customer_name_field"
+            <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                style="@style/DefaultBoldFont16"
-                android:text="이름"
-                />
+                android:orientation="vertical"
+                >
 
-            <androidx.appcompat.widget.AppCompatEditText
-                android:id="@+id/et_customer_name"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                style="@style/DefaultFont14"
-                android:hint="ex)시니나" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_customer_name_field"
+                    style="@style/DefaultBoldFont16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="이름" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_customer_name"
+                    style="@style/DefaultFont14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="ex)시니나" />
 
 
-            <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/tv_phone_field"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                style="@style/DefaultBoldFont16"
-                android:text="휴대폰 번호" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_phone_field"
+                    style="@style/DefaultBoldFont16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="휴대폰 번호" />
 
-            <androidx.appcompat.widget.AppCompatEditText
-                android:id="@+id/et_phone"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                style="@style/DefaultFont14"
-                android:hint="010-1234-5678" />
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_phone"
+                    style="@style/DefaultFont14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="010-1234-5678" />
 
-        </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.appcompat.widget.LinearLayoutCompat>
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="15dp"
-                android:background="#FFF4F4F4"/>
+                android:background="#FFF4F4F4" />
 
             <!-- 픽업 날짜/시간  -->
 
             <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="15dp">
+                android:orientation="vertical">
 
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/tv_pickup_field"
+                    style="@style/DefaultBoldFont16"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    style="@style/DefaultBoldFont16"
                     android:text="픽업 날짜/시간" />
-
-
 
 
             </androidx.appcompat.widget.LinearLayoutCompat>
@@ -88,15 +87,14 @@
             <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="15dp">
+                android:orientation="vertical">
 
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/tv_cake_size_field"
+                    style="@style/DefaultBoldFont16"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    style="@style/DefaultBoldFont16"
                     android:text="케이크 사이즈" />
 
 
@@ -104,39 +102,190 @@
                     android:id="@+id/rv_cake_size_choose"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    tools:listitem="@layout/row_order_cake_size_border"
                     tools:itemCount="5"
-                    />
+                    tools:listitem="@layout/row_order_cake_size_border" />
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/tv_cake_size_choose_notice_comment"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="12sp"
                     android:textColor="@color/gray_99"
-                    tools:text="*디자인/그림/제작 난이도에 따라 추가 금액이 발생 할 수 있습니다."
-                    />
-
-                <androidx.appcompat.widget.AppCompatTextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-
-
-
-
-
-
-
+                    android:textSize="12sp"
+                    tools:text="*디자인/그림/제작 난이도에 따라 추가 금액이 발생 할 수 있습니다." />
 
 
             </androidx.appcompat.widget.LinearLayoutCompat>
 
+            <!--  케이크 옵션  -->
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
 
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_cake_option_sheet_field"
+                    style="@style/DefaultBoldFont16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="시트(빵)" />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rcv_cake_option_sheet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:listitem="@layout/row_order_cake_option"
+                    app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                    app:spanCount="2"
+                    tools:itemCount="2"
+                    />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_cake_option_inner_cream_field"
+                    style="@style/DefaultBoldFont16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="속크림" />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rcv_cake_option_inner_cream"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:listitem="@layout/row_order_cake_option"
+                    app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                    app:spanCount="2"
+                    tools:itemCount="4"
+                    />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_cake_option_notice_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="*겉크림은 크림치즈생크림으로 만들어 집니다."
+                    />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_cake_option_notice_comment2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="*생크림은 100% 동물성 크림만 사용합니다."
+                    />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_cake_option_word_verity_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/DefaultBoldFont16"
+                    android:text="문구/글씨 색상"
+                    />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_word_verity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lines="4"
+                    android:background="@drawable/border_card_view"
+                    android:gravity="start|top"
+                    android:padding="10dp"
+                    android:hint="ex) 생일축하해 깐깐징어~! / 검정"
+                    />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_cake_option_picture_upload_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/DefaultBoldFont16"
+                    android:text="사진 첨부"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rcv_cake_option_pic_upload"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:listitem="@layout/row_order_cake_picture_upload"
+                    tools:itemCount="4"
+                    app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                    app:spanCount="2"
+                    />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_cake_option_comment_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/DefaultBoldFont16"
+                    android:text="추가 요청 사항"
+                    />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_option_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lines="4"
+                    android:background="@drawable/border_card_view"
+                    android:gravity="start|top"
+                    android:padding="10dp"
+                    android:hint="ex) 생일축하해 깐깐징어~! / 검정"
+                    />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
 
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 
     </androidx.core.widget.NestedScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_float"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_expectation_cost_field"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="총 예상금액"
+            android:textColor="@color/gray_99"
+            app:layout_constraintBottom_toTopOf="@+id/tv_expectation_cost"
+            app:layout_constraintEnd_toEndOf="@+id/tv_expectation_cost"
+            app:layout_constraintStart_toStartOf="@+id/tv_expectation_cost"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_expectation_cost"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/RowBoldFont20"
+            android:text="43,000원"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_reservation"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_expectation_cost_field" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_reservation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/sky_blue"
+            android:textColor="@color/white"
+            style="@style/DefaultBoldFont16"
+            android:text="예약하기"
+            android:background="@drawable/no_border_radius_10"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tv_expectation_cost"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
