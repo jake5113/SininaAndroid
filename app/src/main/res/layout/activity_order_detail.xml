@@ -217,6 +217,75 @@
         android:textStyle="bold"
         />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="430dp"
+        android:layout_marginLeft="15dp"
+        android:padding="10dp"
+        android:text="사진"/>
 
+    <!-- 사진1-->
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:src="@drawable/rectangle_style"
+        android:layout_marginTop="470dp"
+        android:layout_marginLeft="50dp"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="485dp"
+        android:src="@drawable/sinina"
+        android:layout_marginLeft="70dp"/>
+
+<!-- 사진2-->
+
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="470dp"
+        android:src="@drawable/rectangle_style" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="485dp"
+        android:src="@drawable/sinina"
+        android:layout_marginLeft="215dp"/>
+
+
+    <!-- 사진3-->
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:src="@drawable/rectangle_style"
+        android:layout_marginTop="620dp"
+        android:layout_marginLeft="50dp"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="620dp"
+        android:src="@drawable/sinina"
+        android:layout_marginLeft="70dp"/>
+
+    <!-- 사진4-->
+
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:src="@drawable/rectangle_style"
+        android:layout_marginTop="620dp"
+        android:layout_marginLeft="200dp"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="620dp"
+        android:src="@drawable/sinina"
+        android:layout_marginLeft="215dp"/>
 
 </RelativeLayout>
