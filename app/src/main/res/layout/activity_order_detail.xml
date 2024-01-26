@@ -123,12 +123,12 @@
         android:text="010-1234-5678"
         android:textStyle="bold" />
     <!--마감 처리-->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="280dp"
-        android:text="-------------------------------------------------------------------------------------------------" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#000000"
+        android:layout_marginTop="280dp"/>
 
 
 <!-- 케이크 size   -->
@@ -231,21 +231,21 @@
         android:layout_height="140dp"
         android:src="@drawable/rectangle_style"
         android:layout_marginTop="470dp"
-        android:layout_marginLeft="50dp"/>
+        android:layout_marginLeft="30dp"/>
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginTop="485dp"
         android:src="@drawable/sinina"
-        android:layout_marginLeft="70dp"/>
+        android:layout_marginLeft="50dp"/>
 
 <!-- 사진2-->
 
     <ImageView
         android:layout_width="140dp"
         android:layout_height="140dp"
-        android:layout_marginLeft="200dp"
+        android:layout_marginLeft="185dp"
         android:layout_marginTop="470dp"
         android:src="@drawable/rectangle_style" />
 
@@ -254,7 +254,7 @@
         android:layout_height="100dp"
         android:layout_marginTop="485dp"
         android:src="@drawable/sinina"
-        android:layout_marginLeft="215dp"/>
+        android:layout_marginLeft="205dp"/>
 
 
     <!-- 사진3-->
@@ -263,29 +263,116 @@
         android:layout_height="140dp"
         android:src="@drawable/rectangle_style"
         android:layout_marginTop="620dp"
-        android:layout_marginLeft="50dp"/>
+        android:layout_marginLeft="30dp"/>
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginTop="620dp"
+        android:layout_marginTop="630dp"
         android:src="@drawable/sinina"
-        android:layout_marginLeft="70dp"/>
+        android:layout_marginLeft="50dp"/>
 
     <!-- 사진4-->
 
     <ImageView
         android:layout_width="140dp"
         android:layout_height="140dp"
-        android:src="@drawable/rectangle_style"
+        android:layout_marginLeft="185dp"
         android:layout_marginTop="620dp"
-        android:layout_marginLeft="200dp"/>
+        android:src="@drawable/rectangle_style" />
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginTop="620dp"
+        android:layout_marginTop="630dp"
         android:src="@drawable/sinina"
-        android:layout_marginLeft="215dp"/>
+        android:layout_marginLeft="205dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="추가 요청 사항"
+        android:layout_marginTop="790dp"
+        android:layout_marginLeft="15dp"
+        android:padding="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="보냉백에 추가 할게요!"
+        android:layout_marginTop="790dp"
+        android:layout_marginLeft="130dp"
+        android:textStyle="bold"
+        android:padding="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="총 예상금액"
+        android:layout_marginTop="830dp"
+        android:layout_marginLeft="15dp"
+        android:textStyle="bold"
+        android:padding="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15,000원"
+        android:layout_marginTop="830dp"
+        android:layout_marginLeft="130dp"
+        android:textStyle="bold"
+        android:padding="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="총 확정금액"
+        android:layout_marginTop="880dp"
+        android:layout_marginLeft="15dp"
+        android:textStyle="bold"
+        android:padding="10dp"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15.000원"
+        android:layout_marginTop="880dp"
+        android:layout_marginLeft="130dp"
+        android:textStyle="bold"
+        android:padding="12dp"
+        android:clickable="false"
+        android:background="@drawable/rectangle_style"
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="등록"
+        android:layout_marginTop="880dp"
+        android:layout_marginLeft="230dp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:clickable="false" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#72C3DE"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="승인하기"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="17dp"/>
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+    
+
+
+
 
 </RelativeLayout>
