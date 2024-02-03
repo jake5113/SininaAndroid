@@ -131,7 +131,7 @@
         android:layout_marginTop="280dp"/>
 
 
-<!-- 케이크 size   -->
+    <!-- 케이크 size   -->
     <TextView
         android:id="@+id/size"
         android:layout_width="wrap_content"
@@ -141,7 +141,7 @@
         android:layout_marginLeft="15dp"
         android:padding="10dp"
         />
-<!-- 케이크 사이즈 detail-->
+    <!-- 케이크 사이즈 detail-->
     <TextView
         android:id="@+id/size_detail"
         android:layout_width="wrap_content"
@@ -152,7 +152,7 @@
         android:padding="10dp"
         android:textStyle="bold"
         />
-<!--sheet-->
+    <!--sheet-->
     <TextView
         android:id="@+id/sheet"
         android:layout_width="wrap_content"
@@ -162,7 +162,7 @@
         android:layout_marginLeft="15dp"
         android:padding="10dp"
         />
-<!-- sheet detail  -->
+    <!-- sheet detail  -->
     <TextView
         android:id="@+id/sheet_detail"
         android:layout_width="wrap_content"
@@ -173,7 +173,7 @@
         android:padding="10dp"
         android:textStyle="bold"
         />
-<!--cream-->
+    <!--cream-->
     <TextView
         android:id="@+id/cream"
         android:layout_width="wrap_content"
@@ -183,7 +183,7 @@
         android:layout_marginLeft="15dp"
         android:padding="10dp"
         />
-<!-- cream detail   -->
+    <!-- cream detail   -->
     <TextView
         android:id="@+id/cream_detail"
         android:layout_width="wrap_content"
@@ -194,7 +194,7 @@
         android:padding="10dp"
         android:textStyle="bold"
         />
-<!--  message   -->
+    <!--  message   -->
     <TextView
         android:id="@+id/message"
         android:layout_width="wrap_content"
@@ -205,7 +205,7 @@
         android:padding="10dp"
         />
 
-<!-- message detail-->
+    <!-- message detail-->
     <TextView
         android:id="@+id/message_detail"
         android:layout_width="wrap_content"
@@ -225,70 +225,70 @@
         android:padding="10dp"
         android:text="사진"/>
 
-<!--    &lt;!&ndash; 사진1&ndash;&gt;-->
-<!--    <ImageView-->
-<!--        android:layout_width="140dp"-->
-<!--        android:layout_height="140dp"-->
-<!--        android:src="@drawable/rectangle_style"-->
-<!--        android:layout_marginTop="470dp"-->
-<!--        android:layout_marginLeft="30dp"/>-->
+    <!--    &lt;!&ndash; 사진1&ndash;&gt;-->
+    <!--    <ImageView-->
+    <!--        android:layout_width="140dp"-->
+    <!--        android:layout_height="140dp"-->
+    <!--        android:src="@drawable/rectangle_style"-->
+    <!--        android:layout_marginTop="470dp"-->
+    <!--        android:layout_marginLeft="30dp"/>-->
 
-<!--    <de.hdodenhof.circleimageview.CircleImageView-->
-<!--        android:layout_width="100dp"-->
-<!--        android:layout_height="100dp"-->
-<!--        android:layout_marginTop="485dp"-->
-<!--        android:src="@drawable/sinina"-->
-<!--        android:layout_marginLeft="50dp"/>-->
+    <!--    <de.hdodenhof.circleimageview.CircleImageView-->
+    <!--        android:layout_width="100dp"-->
+    <!--        android:layout_height="100dp"-->
+    <!--        android:layout_marginTop="485dp"-->
+    <!--        android:src="@drawable/sinina"-->
+    <!--        android:layout_marginLeft="50dp"/>-->
 
-<!--&lt;!&ndash; 사진2&ndash;&gt;-->
+    <!--&lt;!&ndash; 사진2&ndash;&gt;-->
 
-<!--    <ImageView-->
-<!--        android:layout_width="140dp"-->
-<!--        android:layout_height="140dp"-->
-<!--        android:layout_marginLeft="185dp"-->
-<!--        android:layout_marginTop="470dp"-->
-<!--        android:src="@drawable/rectangle_style" />-->
+    <!--    <ImageView-->
+    <!--        android:layout_width="140dp"-->
+    <!--        android:layout_height="140dp"-->
+    <!--        android:layout_marginLeft="185dp"-->
+    <!--        android:layout_marginTop="470dp"-->
+    <!--        android:src="@drawable/rectangle_style" />-->
 
-<!--    <de.hdodenhof.circleimageview.CircleImageView-->
-<!--        android:layout_width="100dp"-->
-<!--        android:layout_height="100dp"-->
-<!--        android:layout_marginTop="485dp"-->
-<!--        android:src="@drawable/sinina"-->
-<!--        android:layout_marginLeft="205dp"/>-->
+    <!--    <de.hdodenhof.circleimageview.CircleImageView-->
+    <!--        android:layout_width="100dp"-->
+    <!--        android:layout_height="100dp"-->
+    <!--        android:layout_marginTop="485dp"-->
+    <!--        android:src="@drawable/sinina"-->
+    <!--        android:layout_marginLeft="205dp"/>-->
 
 
-<!--    &lt;!&ndash; 사진3&ndash;&gt;-->
-<!--    <ImageView-->
-<!--        android:layout_width="140dp"-->
-<!--        android:layout_height="140dp"-->
-<!--        android:src="@drawable/rectangle_style"-->
-<!--        android:layout_marginTop="620dp"-->
-<!--        android:layout_marginLeft="30dp"/>-->
+    <!--    &lt;!&ndash; 사진3&ndash;&gt;-->
+    <!--    <ImageView-->
+    <!--        android:layout_width="140dp"-->
+    <!--        android:layout_height="140dp"-->
+    <!--        android:src="@drawable/rectangle_style"-->
+    <!--        android:layout_marginTop="620dp"-->
+    <!--        android:layout_marginLeft="30dp"/>-->
 
-<!--    <de.hdodenhof.circleimageview.CircleImageView-->
-<!--        android:layout_width="100dp"-->
-<!--        android:layout_height="100dp"-->
-<!--        android:layout_marginTop="630dp"-->
-<!--        android:src="@drawable/sinina"-->
-<!--        android:layout_marginLeft="50dp"/>-->
+    <!--    <de.hdodenhof.circleimageview.CircleImageView-->
+    <!--        android:layout_width="100dp"-->
+    <!--        android:layout_height="100dp"-->
+    <!--        android:layout_marginTop="630dp"-->
+    <!--        android:src="@drawable/sinina"-->
+    <!--        android:layout_marginLeft="50dp"/>-->
 
-<!--    &lt;!&ndash; 사진4&ndash;&gt;-->
+    <!--    &lt;!&ndash; 사진4&ndash;&gt;-->
 
-<!--    <ImageView-->
-<!--        android:layout_width="140dp"-->
-<!--        android:layout_height="140dp"-->
-<!--        android:layout_marginLeft="185dp"-->
-<!--        android:layout_marginTop="620dp"-->
-<!--        android:src="@drawable/rectangle_style" />-->
+    <!--    <ImageView-->
+    <!--        android:layout_width="140dp"-->
+    <!--        android:layout_height="140dp"-->
+    <!--        android:layout_marginLeft="185dp"-->
+    <!--        android:layout_marginTop="620dp"-->
+    <!--        android:src="@drawable/rectangle_style" />-->
 
-<!--    <de.hdodenhof.circleimageview.CircleImageView-->
-<!--        android:layout_width="100dp"-->
-<!--        android:layout_height="100dp"-->
-<!--        android:layout_marginTop="630dp"-->
-<!--        android:src="@drawable/sinina"-->
-<!--        android:layout_marginLeft="205dp"/>-->
+    <!--    <de.hdodenhof.circleimageview.CircleImageView-->
+    <!--        android:layout_width="100dp"-->
+    <!--        android:layout_height="100dp"-->
+    <!--        android:layout_marginTop="630dp"-->
+    <!--        android:src="@drawable/sinina"-->
+    <!--        android:layout_marginLeft="205dp"/>-->
 
-<!-- 주문한 상품 이미지 recycler View 로 변경   -->
+    <!-- 주문한 상품 이미지 recycler View 로 변경   -->
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
@@ -352,48 +352,45 @@
         android:textStyle="bold"
         android:padding="12dp"
         android:clickable="false"
-        android:background="@drawable/rectangle_style"
-
+        android:background="@android:color/transparent"
         />
 
-    <Button
-        android:layout_width="120dp"
-        android:layout_height="60dp"
-        android:text="등록"
-        android:layout_marginTop="875dp"
-        android:layout_marginLeft="290dp"
-
-        android:textStyle="bold"
-        android:padding="10dp"
-        android:clickable="false"
-        android:backgroundTint="#72C3DE"/>
-
-
-    <Button
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:text="승인하기"
-        android:backgroundTint="#72C3DE"
-        android:textSize="25sp"/>
+        android:padding="5dp"
+        android:layout_marginTop="20dp">
 
-<!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="80dp"-->
-<!--        android:background="#72C3DE"-->
-<!--        android:layout_alignParentBottom="true">-->
-<!--        <TextView-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="승인하기"-->
-<!--            android:textColor="#ffffff"-->
-<!--            android:textSize="20sp"-->
-<!--            android:layout_marginLeft="170dp"-->
-<!--            android:layout_marginTop="17dp"/>-->
-<!--    </com.google.android.material.bottomnavigation.BottomNavigationView>-->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+
+            android:text="제작 완료"
+            android:textSize="25sp"
+            android:backgroundTint="#ffffff"
+            android:textColor="#72c3de"/>
+
+    </RelativeLayout>
 
 
-    
+    <!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="80dp"-->
+    <!--        android:background="#72C3DE"-->
+    <!--        android:layout_alignParentBottom="true">-->
+    <!--        <TextView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="승인하기"-->
+    <!--            android:textColor="#ffffff"-->
+    <!--            android:textSize="20sp"-->
+    <!--            android:layout_marginLeft="170dp"-->
+    <!--            android:layout_marginTop="17dp"/>-->
+    <!--    </com.google.android.material.bottomnavigation.BottomNavigationView>-->
+
+
+
 
 
 
