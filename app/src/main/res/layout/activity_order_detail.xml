@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="2dp"
     tools:context=".ui.OrderDetailActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/oder_detail_nav"
@@ -365,8 +370,9 @@
 
         android:textStyle="bold"
         android:padding="10dp"
-        android:clickable="false"
-        android:backgroundTint="#72C3DE"/>
+        android:clickable="true"
+        android:backgroundTint="#72C3DE"
+        android:layout_marginBottom="100dp"/>
 
 
     <Button
@@ -393,9 +399,9 @@
 <!--    </com.google.android.material.bottomnavigation.BottomNavigationView>-->
 
 
-    
+
+    </RelativeLayout>
 
 
 
-
-</RelativeLayout>
+</ScrollView>

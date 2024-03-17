@@ -9,7 +9,7 @@ import com.sinina.sininacake.R
 import com.sinina.sininacake.databinding.ActivitySplashBinding
 
 class Splash : AppCompatActivity() {
-    val binding:ActivitySplashBinding by lazy { ActivitySplashBinding.inflate(layoutInflater) }
+     val binding:ActivitySplashBinding by lazy { ActivitySplashBinding.inflate(layoutInflater) }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
@@ -19,6 +19,7 @@ class Splash : AppCompatActivity() {
             startActivity( Intent(this, LoginActivity::class.java) )
             finish()
         },1500)
+
 
     }
 }

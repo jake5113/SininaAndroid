@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="2dp"
     tools:context=".ui.OrderDetailActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp">
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/oder_detail_nav"
@@ -359,8 +363,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:padding="5dp"
-        android:layout_marginTop="20dp">
+        android:layout_marginTop="50dp">
 
         <Button
             android:layout_width="match_parent"
@@ -369,7 +372,8 @@
             android:text="제작 완료"
             android:textSize="25sp"
             android:backgroundTint="#ffffff"
-            android:textColor="#72c3de"/>
+            android:textColor="#72c3de"
+            android:layout_marginTop="15dp"/>
 
     </RelativeLayout>
 
@@ -393,6 +397,6 @@
 
 
 
+    </RelativeLayout>
 
-
-</RelativeLayout>
+</ScrollView>
